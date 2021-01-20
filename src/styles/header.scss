@@ -3,5 +3,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  &_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_logo {
+    margin: 5rem 0;
+  }
+}
+.img_container {
+  padding: 5px;
+  margin: 0 5px;
+  background-color: none;
+  border-radius: 100%;
+  border: 0 solid $color-btn;
+  transition: all 0.1s;
+}
+
+.img_avatar {
+  width: 100%;
+  border-radius: 100%;
+  padding: 5px;
+  transition: all 0.1s;
+}
+
+.img_container:hover {
+  border-bottom: 4px solid $color-btn;
+}
+
+.img_avatar:hover {
+  filter: blur(1px);
 }
