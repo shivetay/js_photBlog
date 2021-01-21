@@ -1,0 +1,22 @@
+.gallery {
+  &_container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 4rem);
+    gap: 1rem;
+  }
+  &_item {
+    &--1 {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+    &--4 {
+    }
+    &--5 {
+    }
+    &--6 {
+    }
+  }
+}
