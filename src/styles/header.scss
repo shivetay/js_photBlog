@@ -20,8 +20,9 @@
   margin: 0 5px;
   background-color: none;
   border-radius: 100%;
-  border: 0 solid $color-btn;
-  transition: all 0.1s;
+  border-top: 4px solid $color-btn;
+  border-bottom: 0 solid $color-btn;
+  transition: all 0.2s ease-out;
 }
 
 .img_avatar {
@@ -32,9 +33,51 @@
 }
 
 .img_container:hover {
+  border-top: 0 solid $color-btn;
   border-bottom: 4px solid $color-btn;
 }
 
 .img_avatar:hover {
   filter: blur(1px);
+}
+
+.navigation {
+  &_container {
+    margin: 3rem 0;
+    width: 100%;
+    z-index: 10;
+  }
+  &_nav-li {
+    display: block;
+    margin-top: 2.2rem;
+    width: 100%;
+    z-index: 10;
+  }
+  &_nav-link {
+    position: relative;
+    display: block;
+    padding: 3rem 4rem;
+    height: 100%;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $font-medium;
+    z-index: 10;
+  }
+  &_nav-link:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all 0.2s cubic-bezier(1, 0.58, 0.46, 1.03);
+    background-color: $color-btn;
+    // opacity: 0;
+    z-index: 1;
+  }
+  &_nav-link:hover::after {
+    width: 100%;
+    // opacity: 0.4;
+  }
 }
