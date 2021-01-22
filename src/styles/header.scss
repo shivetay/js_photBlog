@@ -1,5 +1,5 @@
 .header {
-  background-color: $color-main-opa;
+  background: linear-gradient(to bottom right, $color-main-opa, $color-light);
   display: flex;
   flex-direction: column;
   align-items: center;
