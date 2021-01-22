@@ -35,21 +35,24 @@ span {
   display: grid;
   grid-template-rows: 100vh;
   grid-template-columns:
-    [full-start] 1fr [center-start]1fr repeat(
+    [sidebar-start] 1fr
+    [sidebar-end full-start] 1fr [center-start] repeat(
       8,
       [col-start] minmax(min-content, 14rem) [col-end]
     )
-    1fr
     [center-end] 1fr[full-end];
 }
 
 .row-full {
   grid-row: 1 /-1;
 }
+.col-sidebar {
+  grid-column: sidebar-start / sidebar-end;
+}
 .grid-center {
   grid-column: center-start / center-end;
 }
 
 .grid-col {
-  grid-column: col-start / col-end;
+  grid-column: col-start / center-end;
 }
