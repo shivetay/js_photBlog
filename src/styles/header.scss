@@ -1,19 +1,16 @@
 .header {
-  // background: linear-gradient(
-  //   to bottom right,
-  //   $color-main-opa,
-  //   $color-dark-trans
-  // );
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
   &_container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 1rem;
   }
   &_logo {
     margin: 5rem 0;
@@ -21,7 +18,7 @@
 }
 .img_container {
   padding: 5px;
-  margin: 0 5px;
+  margin: 0 1rem;
   background-color: none;
   border-radius: 100%;
   border-top: 4px solid $color-btn;
@@ -76,12 +73,10 @@
     width: 0;
     height: 100%;
     transition: all 0.2s cubic-bezier(1, 0.58, 0.46, 1.03);
-    background-color: $color-btn;
-    // opacity: 0;
+    background: linear-gradient(to right, $color-btn, $color-btn-opa);
     z-index: 1;
   }
   &_nav-link:hover::after {
-    width: 100%;
-    // opacity: 0.4;
+    width: 120%;
   }
 }
