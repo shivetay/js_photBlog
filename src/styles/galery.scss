@@ -10,8 +10,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 10;
   }
+
   &_item {
+    position: relative;
+    z-index: 10;
+    transition: all 0.6s ease-out;
     &--1 {
       grid-row: 1 / span 4;
       grid-column: 1 / span 4;
@@ -44,5 +49,21 @@
       grid-row: 7 / -1;
       grid-column: 7 / span 2;
     }
+    &--icon {
+      font-size: $font-big;
+      color: $color-font-light;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin: 2rem 0;
+      opacity: 0;
+      transition: all 0.4s ease-out;
+    }
+    &--icon:hover {
+      color: $color-btn;
+    }
+  }
+  &_item:hover .gallery_item--icon {
+    opacity: 1;
   }
 }
