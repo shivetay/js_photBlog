@@ -1,0 +1,24 @@
+.about {
+  &_modal {
+    display: none;
+  }
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_header {
+    font-size: $header-h1;
+    padding: 2rem;
+  }
+  &_paragraph {
+    font-size: $font-large;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  &_img {
+    width: 30%;
+    border-radius: 50%;
+  }
+}

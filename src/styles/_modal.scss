@@ -1,0 +1,19 @@
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 20; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: $color-alt-opa; /* Fallback color */
+
+  &-content {
+    background-color: $color-alt;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80rem;
+  }
+}

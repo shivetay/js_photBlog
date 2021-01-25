@@ -1,0 +1,25 @@
+.contact {
+  &_modal {
+    display: none;
+  }
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_header {
+    font-size: $header-h1;
+    padding: 2rem;
+  }
+  &_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_span {
+    font-size: $font-large;
+    margin: 2rem;
+  }
+}
