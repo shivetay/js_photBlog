@@ -30,12 +30,12 @@
             <ul class="navigation_nav-ul">
               <li class="navigation_nav-li">
                 <a class="link navigation_nav-link" href="#"
-                  ><span>Me</span>
+                  ><span class="me">Me</span>
                 </a>
               </li>
               <li class="navigation_nav-li">
                 <a class="link navigation_nav-link" href="#"
-                  ><span>Contact</span></a
+                  ><span class="contact">Contact</span></a
                 >
               </li>
               <li class="navigation_nav-li">
@@ -181,7 +181,7 @@
         </figure>
       </div>
     </section>
-    <section class="about about_modal modal">
+    <section id="about" class="about about_modal modal">
       <div class="about_container modal-content">
         <img
           class="about_img"
@@ -197,7 +197,7 @@
         </p>
       </div>
     </section>
-    <section class="contact contact_modal modal">
+    <section id="contact" class="contact contact_modal modal">
       <div class="contact_container modal-content">
         <h3 class="contact_header">Contact</h3>
         <div class="contact_details">
@@ -210,6 +210,15 @@
           <span class="contact_span"
             ><i class="fas fa-envelope-open-text"></i> Rosie.Mosciski@gmail.com
           </span>
+        </div>
+      </div>
+    </section>
+    <section class="add add_modal modal">
+      <div class="add_container modal-content">
+        <h2 class="add_header">Add Photo</h2>
+        <div class="add_form">
+          <input type="text" placeholder="add url" />
+          <button class="add_button" type="submit">Add Photo</button>
         </div>
       </div>
     </section>

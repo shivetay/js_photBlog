@@ -31,6 +31,15 @@ span {
   position: relative;
   z-index: 10;
 }
+button {
+  font-size: $font-normal;
+}
+
+input {
+  height: 3rem;
+  outline: none;
+}
+
 .grid {
   display: grid;
   grid-template-rows: 100vh;
@@ -55,4 +64,8 @@ span {
 
 .grid-col {
   grid-column: col-start / center-end;
+}
+
+.active {
+  display: block;
 }

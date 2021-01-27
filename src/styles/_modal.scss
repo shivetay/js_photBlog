@@ -1,13 +1,13 @@
 .modal {
-  position: fixed; /* Stay in place */
-  z-index: 20; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  position: fixed;
+  z-index: 20;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: $color-alt-opa; /* Fallback color */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: $color-alt-opa;
 
   &-content {
     background-color: $color-alt;
