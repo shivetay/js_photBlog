@@ -55,6 +55,17 @@ input {
 .row-full {
   grid-row: 1 /-1;
 }
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col-flex {
+  width: 32%;
+  padding-bottom: 32%; /* Same as width, sets height */
+  margin-bottom: 2%; /* (100-32*3)/2 */
+  position: relative;
+}
 .col-sidebar {
   grid-column: sidebar-start / sidebar-end;
 }
