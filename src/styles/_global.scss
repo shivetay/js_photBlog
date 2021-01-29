@@ -8,7 +8,7 @@
 body {
   font-family: $font-family;
   color: $color-font-light;
-  background: linear-gradient(to top left, $color-dark-trans, $color-main-opa);
+  background: $color-main-opa;
 }
 
 html {
@@ -62,9 +62,8 @@ input {
 }
 .col-flex {
   width: 32%;
-  padding-bottom: 32%; /* Same as width, sets height */
   margin-bottom: 2%; /* (100-32*3)/2 */
-  position: relative;
+  // position: relative;
 }
 .col-sidebar {
   grid-column: sidebar-start / sidebar-end;
