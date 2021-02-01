@@ -12,8 +12,8 @@ class UI {
       output += `
 
         <figure class="gallery_item col-flex">
-          <a href="#">
-            <i class="far fa-trash-alt gallery_item--icon"></i>
+          <a class="delete" href="#" data-id="${photo.id}">
+            <i class="far fa-trash-alt gallery_item--icon "></i>
           </a>
           <a
           data-id="${photo.id}"
