@@ -15,6 +15,7 @@ html {
   box-sizing: border-box;
   /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -32,7 +33,11 @@ span {
   z-index: 10;
 }
 button {
+  color: $color-font-light;
   font-size: $font-normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 input {
@@ -76,6 +81,11 @@ input {
   grid-column: col-start / center-end;
 }
 
+/* helper classes */
 .active {
   display: block;
+}
+
+.inactive {
+  display: none;
 }

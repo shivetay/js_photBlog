@@ -11,9 +11,9 @@ const addModalClass = () => {
   modal.classList.toggle('add_modal');
 };
 
-window.onclick = function (event) {
+window.onclick = function (e) {
   const modal = document.querySelector('.add');
-  if (event.target == modal) {
+  if (e.target == modal) {
     modal.classList.toggle('add_modal');
     modal.classList.toggle('active');
   }

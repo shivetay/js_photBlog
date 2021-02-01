@@ -1,0 +1,15 @@
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: $font-large;
+  background: none;
+  transition: all 0.4s;
+}
+
+#myBtn:hover {
+  background: $color-btn;
+}

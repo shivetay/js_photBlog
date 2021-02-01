@@ -27,7 +27,6 @@ const app = {
     getPhotos()
       .then((data) => {
         thisApp.ui = ui.showPhotos(data);
-        console.log(data, 'photos');
       })
       .catch((err) => {
         console.log(`Error: ${err}`);
@@ -68,7 +67,6 @@ const app = {
       console.log(photoId);
       deltePhoto(photoId)
         .then(() => {
-          console.log(`Removed: ${photoId}`);
           location.reload();
         })
         .catch((err) => {
@@ -76,14 +74,32 @@ const app = {
         });
     }
   },
+
+  /* scrol top */
+  moveTop: function () {
+    document.querySelector('#myBtn').addEventListener('click', this.top);
+  },
+
+  top: function () {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  },
+
+  /* scroll init */
+  initScroll: function () {
+    const thisApp = this;
+    thisApp.ui = ui.scrollTop();
+  },
   /* app init */
   init: function () {
     console.log('*** App starting ***');
     initModal();
     this.loadPhotos();
+    this.initScroll();
     this.photoRemove();
     this.initPhotos();
     this.addPhotos();
+    this.moveTop();
   },
 };
 

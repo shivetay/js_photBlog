@@ -33,6 +33,20 @@ class UI {
     }
     thisUI.photo.innerHTML = output;
   }
+
+  scrollTop() {
+    const thisUI = this;
+    thisUI.scroll = document.querySelector('#myBtn');
+    if (
+      document.body.scrollTop > 10 ||
+      document.documentElement.scrollTop > 10
+    ) {
+      thisUI.scroll.classList.toggle('active');
+      thisUI.scroll.classList.toggle('inactive');
+    } else {
+      thisUI.scroll.classList.toggle('inactive');
+    }
+  }
 }
 
 export const ui = new UI();
