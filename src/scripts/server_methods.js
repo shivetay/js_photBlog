@@ -1,7 +1,7 @@
 const url =
   '//' +
   window.location.hostname +
-  (window.location.hostname == 'localhost' ? ':3000' : '');
+  (window.location.hostname == 'localhost' ? ':4000' : '');
 
 export const getPhotos = async () => {
   const res = await fetch(`http://${url}/photos`, {
