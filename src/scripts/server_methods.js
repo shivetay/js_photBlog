@@ -1,5 +1,10 @@
+const url =
+  '//' +
+  window.location.hostname +
+  (window.location.hostname == 'localhost' ? ':3131' : '');
+
 export const getPhotos = async () => {
-  const res = await fetch(`http://localhost:3000/photos`, {
+  const res = await fetch(`http://${url}/photos`, {
     method: 'GET',
     header: {
       'Content-Type': 'application/json',
@@ -14,7 +19,7 @@ export const getPhotos = async () => {
 };
 
 export const postPhoto = async (data) => {
-  const res = await fetch(`http://localhost:3000/photos`, {
+  const res = await fetch(`http://${url}/photos`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -26,7 +31,7 @@ export const postPhoto = async (data) => {
 };
 
 export const deltePhoto = async (data) => {
-  const res = await fetch(`http://localhost:3000/photos/${data}`, {
+  const res = await fetch(`http://http://${url}/photos/photos/${data}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
