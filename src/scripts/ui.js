@@ -22,7 +22,8 @@ class UI {
             rel="noopener noreferrer"
           >
             <img
-            data-id="${photo.id}"
+              data-id="${photo.id}"
+              loading="lazy"
               src="${photo.url}"
               alt="Gallery image 1"
               class="gallery__img"
