@@ -4,7 +4,7 @@ const url =
   (window.location.hostname == 'localhost' ? ':4000' : '');
 
 export const getPhotos = async () => {
-  const res = await fetch(`http://${url}/photos`, {
+  const res = await fetch(`https://${url}/photos`, {
     method: 'GET',
     header: {
       'Content-Type': 'application/json',
@@ -19,7 +19,7 @@ export const getPhotos = async () => {
 };
 
 export const postPhoto = async (data) => {
-  const res = await fetch(`http://${url}/photos`, {
+  const res = await fetch(`https://${url}/photos`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export const postPhoto = async (data) => {
 };
 
 export const deltePhoto = async (data) => {
-  const res = await fetch(`http://http://${url}/photos/photos/${data}`, {
+  const res = await fetch(`https://${url}/photos/${data}`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',

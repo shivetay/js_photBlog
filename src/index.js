@@ -90,12 +90,13 @@ const app = {
     const thisApp = this;
     thisApp.ui = ui.scrollTop();
   },
+
   /* app init */
   init: function () {
     console.log('*** App starting ***');
     initModal();
     this.loadPhotos();
-    this.initScroll();
+    // this.initScroll();
     this.photoRemove();
     this.initPhotos();
     this.addPhotos();

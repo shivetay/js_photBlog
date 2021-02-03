@@ -38,14 +38,16 @@ class UI {
   scrollTop() {
     const thisUI = this;
     thisUI.scroll = document.querySelector('#myBtn');
-    if (
-      document.body.scrollTop > 10 ||
-      document.documentElement.scrollTop > 10
-    ) {
+    const bodyTop = document.body.scrollTop;
+    const bodyElementTop = document.documentElement.scrollTop;
+
+    if (bodyTop > 20 || bodyElementTop > 20) {
       thisUI.scroll.classList.toggle('active');
       thisUI.scroll.classList.toggle('inactive');
+      console.log('skrol');
     } else {
       thisUI.scroll.classList.toggle('inactive');
+      console.log('skrol 2');
     }
   }
 }

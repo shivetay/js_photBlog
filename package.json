@@ -10,7 +10,7 @@
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "init:gitignore:custom": "echo \"dist\" >> .gitignore",
     "dev": "webpack serve --config webpack.dev.js --open",
-    "server": "json-server --watch api/db.json",
+    "server": "json-server --port 4000 --no-cors --delay 550 --watch api/db.json",
     "build": "webpack --config webpack.prod.js",
     "start": "node server.js"
   },

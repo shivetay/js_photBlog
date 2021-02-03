@@ -16,6 +16,16 @@ html {
   /* 1rem = 10px; 16px - base font size  10px/16px = 62.5% */
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include respond(desktop-small) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @include respond(tab-port) {
+    font-size: 44%; // 1rem = 7px
+  }
+  @include respond(phone) {
+    font-size: 37%; // 1rem = 6px
+  }
 }
 
 ul {
@@ -47,7 +57,7 @@ input {
 
 .grid {
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh 1fr;
   grid-template-columns:
     [sidebar-start] 1fr
     [sidebar-end full-start] 1fr [center-start] repeat(
@@ -58,8 +68,9 @@ input {
 }
 
 .row-full {
-  grid-row: 1 /-1;
+  grid-row: 1 / span 1;
 }
+
 .row-flex {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +80,16 @@ input {
   width: 32%;
   margin-bottom: 2%; /* (100-32*3)/2 */
   // position: relative;
+
+  @include respond(desktop-small) {
+    width: 50%;
+  }
+  @include respond(tab-port) {
+    width: 50%;
+  }
+  @include respond(phone) {
+    width: 50%;
+  }
 }
 .col-sidebar {
   grid-column: sidebar-start / sidebar-end;

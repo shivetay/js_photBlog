@@ -1,7 +1,7 @@
 # About
 
 This is a JS CSS and HTML photo blog page. It runs with JSON server as a fake backround.
-Demo https://lit-hollows-45064.herokuapp.com/
+[Demo] (https://lit-hollows-45064.herokuapp.com/)
 
 ## Instalation
 
@@ -23,6 +23,6 @@ This will run `JSON server`
 
 This blog uses a JSON server.
 
-- `http://localhost:3000/` for rules.
-- `http://localhost:3000/photos/` display list of all photos.
-- `http://localhost:3000/photos/1` display single photo
+- `http://localhost:4000/` for rules.
+- `http://localhost:4000/photos/` display list of all photos.
+- `http://localhost:4000/photos/1` display single photo
